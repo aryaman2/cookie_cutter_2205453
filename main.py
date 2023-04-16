@@ -20,8 +20,6 @@ detector = HandTrackingModule.HandDetector(maxHands=1, detectionCon=0.77)
 sqr_img = cv2.imread('CookieCutter-main\img\sqr(2).png')
 mlsa = cv2.imread('CookieCutter-main\img\mlsa.png')
 while True:
-    cv2.imshow('cookie', cv2.resize(mlsa, (0, 0), fx=0.6, fy=0.6))
-    cv2.waitKey(2000)
     cv2.imshow('cookie', cv2.resize(intro, (0, 0), fx=0.6, fy=0.6))
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
